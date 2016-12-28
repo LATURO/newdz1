@@ -19,8 +19,8 @@ namespace ееее
 				}
 			}
 			Console.Write("\r\nМассив после замены: ");
-			for (int i = 0; i < s;i++) {
-				Console.Write("{0}", array[i]);
+			for (char i in b) {
+				Console.Write(i);
 			}
 		}
 	}
