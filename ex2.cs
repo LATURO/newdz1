@@ -11,9 +11,9 @@ namespace ееее
 			int buf;
 			string s=Console.ReadLine();
 			char[] b = s.ToCharArray();
-			string al="1234567890";
+			
 			Console.Write("Массив до замены: ");
-			char[] check=al.ToCharArray();
+			const char[] check={'1','2','3','4','5','6','7','8','9','0'};
 			for (int i = 0; i < b.Length;i++) {
 				for(int j=0;j<al.Length();j++){
 				if(b[i]==check[j]){
