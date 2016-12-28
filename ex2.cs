@@ -11,11 +11,14 @@ namespace ееее
 			int buf;
 			string s=Console.ReadLine();
 			char[] b = s.ToCharArray();
+			string al="1234567890";
 			Console.Write("Массив до замены: ");
-			
+			char[] check=al.ToCharArray();
 			for (int i = 0; i < b.Length;i++) {
-				if (int.TryParse(Convert.ToString(b[i]),out buf)==true) {
-					b[i] = "$";
+				for(int j=0;j<al.Length();j++){
+				if(b[i]==check[j]){
+				b[i]='$';
+				}
 				}
 			}
 			Console.Write("\r\nМассив после замены: ");
