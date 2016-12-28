@@ -14,8 +14,8 @@ namespace ееее
 			Console.Write("Массив до замены: ");
 			
 			for (int i = 0; i < b.Length;i++) {
-				if (int.TryParse(b[i],out buf)==true) {
-					array[i] = "$";
+				if (int.TryParse(Convert.ToString(b[i]),out buf)==true) {
+					b[i] = "$";
 				}
 			}
 			Console.Write("\r\nМассив после замены: ");
