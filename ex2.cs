@@ -9,18 +9,12 @@ namespace ееее
 			
 
 			int buf;
-			int s = int.Parse(Console.ReadLine());
-			string[] array=new string[s];
-			for (int i = 0; i < s; i++) {
-				array[i] = Console.ReadLine();
-			}
+			string s=Console.ReadLine();
+			char[] b = s.ToCharArray();
 			Console.Write("Массив до замены: ");
-			for (int i = 0; i < s; i++)
-			{
-				Console.Write("{0}", array[i]);
-			}
-			for (int i = 0; i < array.Length;i++) {
-				if (int.TryParse(array[i],out buf)==true) {
+			
+			for (int i = 0; i < b.Length;i++) {
+				if (int.TryParse(b[i],out buf)==true) {
 					array[i] = "$";
 				}
 			}
